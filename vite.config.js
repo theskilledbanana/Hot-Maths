@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? './' : '/',
+export default defineConfig({
+  base: './',
   plugins: [react(), tailwindcss()],
   server: {
     // HMR is disabled in AI Studio via DISABLE_HMR env var.
@@ -13,4 +13,4 @@ export default defineConfig(({ command }) => ({
     // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
     watch: process.env.DISABLE_HMR === 'true' ? null : {},
   },
-}));
+});
