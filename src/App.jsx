@@ -10,6 +10,7 @@ import { GameGrid } from './components/GameGrid';
 import { GamePlayer } from './components/GamePlayer';
 import gamesData from './games.json';
 
+// Unboxed Games Hub - v1.0.1
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
