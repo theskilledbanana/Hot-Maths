@@ -10,7 +10,7 @@ import { GameGrid } from './components/GameGrid';
 import { GamePlayer } from './components/GamePlayer';
 import gamesData from './games.json';
 
-// Unboxed Games Hub - v1.0.6-JS
+// Unboxed Games Hub - v1.0.7-PURE-JS
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -104,7 +104,7 @@ export default function App() {
               Unboxed Games
             </span>
             <p className="text-[10px] font-bold text-black/40 mt-2">
-              © 2026 UNBOXED ARCHIVE. ALL SYSTEMS OPERATIONAL. v1.0.6-JS
+              © 2026 UNBOXED ARCHIVE. ALL SYSTEMS OPERATIONAL. v1.0.7-PURE-JS
             </p>
             <p className="text-[10px] font-bold text-black/20">
               JS-CORE ACTIVE: {lastCheck}
