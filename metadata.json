@@ -1,6 +1,6 @@
 {
   "name": "Unboxed Games",
-  "description": "A curated collection of unblocked games for school or work. Pure JavaScript version v1.0.7-PURE-JS.",
+  "description": "A curated collection of unblocked games for school or work. JavaScript (JSX) version v1.0.8-JSX.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
