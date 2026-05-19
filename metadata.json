@@ -1,6 +1,6 @@
 {
   "name": "Unboxed Games",
-  "description": "A curated collection of unblocked games for school or work. Now with 'Surprise Me' feature! [Updated 2026-05-19 v1.0.5]",
+  "description": "A curated collection of unblocked games for school or work. JavaScript version v1.0.5-JS with 'Surprise Me' and live status.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

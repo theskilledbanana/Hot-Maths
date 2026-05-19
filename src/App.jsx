@@ -15,6 +15,7 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [activeGame, setActiveGame] = useState(null);
+  const [lastCheck, setLastCheck] = useState(new Date().toLocaleTimeString());
 
   const filteredGames = useMemo(() => {
     return gamesData.filter((game) => {
@@ -96,7 +97,10 @@ export default function App() {
               Unboxed Games
             </span>
             <p className="text-[10px] font-bold text-black/40 mt-2">
-              © 2026 UNBOXED ARCHIVE. ALL SYSTEMS OPERATIONAL. v1.0.4
+              © 2026 UNBOXED ARCHIVE. ALL SYSTEMS OPERATIONAL. v1.0.5-JS
+            </p>
+            <p className="text-[10px] font-bold text-black/20">
+              JS-CORE ACTIVE: {lastCheck}
             </p>
           </div>
           
