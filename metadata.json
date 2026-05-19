@@ -1,0 +1,8 @@
+{
+  "name": "Unboxed Games",
+  "description": "A curated collection of unblocked games for school or work, stored in a simple JSON-based architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

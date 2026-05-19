@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "slug": "2048",
+    "title": "2048",
+    "description": "Join the numbers and get to the 2048 tile!",
+    "thumbnail": "/src/assets/images/thumbnail_2048_1779182228969.png",
+    "iframeUrl": "https://play2048.co/",
+    "category": "Puzzle"
+  },
+  {
+    "id": "2",
+    "slug": "cookie-clicker",
+    "title": "Cookie Clicker",
+    "description": "The original idle game where you bake cookies to rule the universe.",
+    "thumbnail": "/src/assets/images/thumbnail_cookie_1779182243859.png",
+    "iframeUrl": "https://orteil.dashnet.org/cookieclicker/",
+    "category": "Idle"
+  },
+  {
+    "id": "3",
+    "slug": "slope",
+    "title": "Slope",
+    "description": "Navigate a ball through a 3D obstacle course at high speeds.",
+    "thumbnail": "/src/assets/images/thumbnail_slope_1779182261017.png",
+    "iframeUrl": "https://slopegame.online/",
+    "category": "Action"
+  },
+  {
+    "id": "4",
+    "slug": "tetris",
+    "title": "Tetris",
+    "description": "The classic block-stacking puzzle game.",
+    "thumbnail": "/src/assets/images/thumbnail_tetris_1779182279627.png",
+    "iframeUrl": "https://tetris.com/play-tetris",
+    "category": "Puzzle"
+  }
+]
