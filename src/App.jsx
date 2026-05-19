@@ -30,6 +30,13 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleRandomGame = () => {
+    if (gamesData.length > 0) {
+      const randomIndex = Math.floor(Math.random() * gamesData.length);
+      handleGameSelect(gamesData[randomIndex]);
+    }
+  };
+
   const handleBack = () => {
     setActiveGame(null);
   };
@@ -97,7 +104,7 @@ export default function App() {
             <div className="flex flex-col">
               <span className="text-[10px] font-black uppercase text-black/40 mb-2">Navigation</span>
               <button onClick={handleBack} className="text-sm font-bold hover:underline py-1 text-left">GAMES HUB</button>
-              <a href="#" className="text-sm font-bold hover:underline py-1">SURPRISE ME</a>
+              <button onClick={handleRandomGame} className="text-sm font-bold hover:underline py-1 text-left">SURPRISE ME</button>
             </div>
             <div className="flex flex-col">
               <span className="text-[10px] font-black uppercase text-black/40 mb-2">Legal</span>
