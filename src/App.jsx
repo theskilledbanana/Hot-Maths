@@ -3,19 +3,26 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Navbar } from './components/Navbar';
 import { GameGrid } from './components/GameGrid';
 import { GamePlayer } from './components/GamePlayer';
 import gamesData from './games.json';
 
-// Unboxed Games Hub - v1.0.4
+// Unboxed Games Hub - v1.0.6-JS
 export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [activeGame, setActiveGame] = useState(null);
   const [lastCheck, setLastCheck] = useState(new Date().toLocaleTimeString());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setLastCheck(new Date().toLocaleTimeString());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   const filteredGames = useMemo(() => {
     return gamesData.filter((game) => {
@@ -97,7 +104,7 @@ export default function App() {
               Unboxed Games
             </span>
             <p className="text-[10px] font-bold text-black/40 mt-2">
-              © 2026 UNBOXED ARCHIVE. ALL SYSTEMS OPERATIONAL. v1.0.5-JS
+              © 2026 UNBOXED ARCHIVE. ALL SYSTEMS OPERATIONAL. v1.0.6-JS
             </p>
             <p className="text-[10px] font-bold text-black/20">
               JS-CORE ACTIVE: {lastCheck}

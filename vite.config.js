@@ -4,7 +4,7 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig({
-  base: './',
+  base: '/',
   plugins: [react(), tailwindcss()],
   server: {
     // HMR is disabled in AI Studio via DISABLE_HMR env var.
